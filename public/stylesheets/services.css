@@ -1,10 +1,10 @@
 @font-face {
     font-family: gilroy;
-    src: url("./Gilroy-Regular.ttf");
+    src: url("../assets/font/Gilroy-Regular.ttf");
 }
 @font-face {
     font-family: gilroyebold;
-    src: url("./Gilroy-ExtraBold.ttf");
+    src: url("../assets/font/Gilroy-ExtraBold.ttf");
 }
 *{
     margin: 0;
@@ -50,9 +50,10 @@ html,body{
 #services-para{
     position: absolute;
     top: 15vh;
-    left: 47vw;
+    left: 53vw;
     font-family: "gilroy";
-
+    color: rgb(8, 15, 71);
+    font-weight: 800;
 }
 #tablebooking-service{
     width: 15vw;
@@ -102,8 +103,10 @@ html,body{
 #fooddelivery-service p{
     position: absolute;
     top: 45vh;
-    left: 8vw;
+    left: 3.5vw;
     font-family: "gilroy";
+    font-weight: 800;
+
 }
 #fooddelivery-service img{
     width: 15vw;
@@ -123,6 +126,8 @@ html,body{
     position: absolute;
     top: 52vh;
     left: 30vw;
+    font-weight: 800;
+
 }
 #room-booking{
     font-family: "gilroyebold";
@@ -136,5 +141,7 @@ html,body{
     position: absolute;
     top: 86vh;
     left: 12vw;
+    font-weight: 800;
+
 }
 
