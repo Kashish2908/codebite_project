@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monument;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main-container {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(248, 204, 166, 0.495);
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(8, 15, 71);
+}
+
+#cards-row {
+  position: absolute;
+  margin-top: 20vh;
+  height: 40vh;
+  width: 100%;
+  padding: 2vh 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+}
+
+#cards-row1 {
+  position: absolute;
+  margin-top: 80vh;
+  height: 40vh;
+  width: 100%;
+  padding: 2vh 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.card {
+  overflow: hidden;
+  height: 40vh;
+  width: 30vw;
+  border-radius: 15px;
+  background: transparent;
+  position: relative;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.card #place-description {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(69, 86, 102, 0.829) 0%,
+    rgba(34, 34, 34, 0.84) 90%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.card h3 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: white;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#star-rating {
+  margin-left: 12%;
+  position: absolute;
+  top: 37%;
+  left: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card i {
+  font-size: 12px;
+}
+
+.checked {
+  color: orange;
+}
+
+#line {
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  background-color: rgb(202, 184, 184);
+  top: 45%;
+  left: 9%;
+}
+
+#desc {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  height: 10%;
+  width: 100%;
+}
+
+#desc p {
+  font-family: gilroy;
+  font-size: 15px;
+  font-style: oblique;
+  color: white;
+}
+
+/* 
+  #cards-row:hover :not(:hover) {
+    opacity: 0.9;
+  } */
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover #place-description {
+  opacity: 1;
+}
+
+img:hover {
+  scale: 1.5;
+}
