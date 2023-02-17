@@ -1,0 +1,140 @@
+@font-face {
+    font-family: gilroy;
+    src: url("./Gilroy-Regular.ttf");
+}
+@font-face {
+    font-family: gilroyebold;
+    src: url("./Gilroy-ExtraBold.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: red;
+}
+#ourservices{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    background-color: rgba(248, 204, 166, 0.861);
+}
+#border{
+    width: 17px;
+    height: 80px;
+    background-color: rgb(231, 13, 49);
+    position: absolute;
+    top: 13vh;
+    left: 8vw;
+}
+#services-heading{
+    font-family: "gilroyebold";
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    color: rgb(8, 15, 71);
+}
+#services-para{
+    position: absolute;
+    top: 15vh;
+    left: 47vw;
+    font-family: "gilroy";
+
+}
+#tablebooking-service{
+    width: 15vw;
+    height: 35vh;
+    background-color: rgba(248, 182, 125, 0.785);
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+}
+#tablebooking-service img{
+    width: 12vw;
+    position: absolute;
+    left: 3vw;
+    top: 2vw;
+}
+
+#hotelbooking-service{
+    width: 18vw;
+    height: 30vh;
+    position: absolute;
+    top: 68vh;
+    left: 35vw;
+    background-color: rgba(248, 182, 125, 0.785);
+}
+#hotelbooking-service img{
+    width: 12vw;
+    position: absolute;
+    top: 1vw;
+    left: 3vw;
+}
+#fooddelivery-service{
+    width: 30vw;
+    height: 58vh;
+    position: absolute;
+    right: 10vw;
+    top: 40vh;
+    background-color: rgba(248, 182, 125, 0.785);
+}
+#fooddelivery-service h3{
+    font-family: "gilroyebold";
+    color: rgb(8, 15, 71);
+    position: absolute;
+    font-weight: 800;
+    top: 38vh;
+    left: 5vw;
+}
+#fooddelivery-service p{
+    position: absolute;
+    top: 45vh;
+    left: 8vw;
+    font-family: "gilroy";
+}
+#fooddelivery-service img{
+    width: 15vw;
+    position: absolute;
+    left: 7vw;
+    top: 1vw;
+}
+#table-booking{
+    font-family: "gilroyebold";
+    color: rgb(8, 15, 71);
+    position: absolute;
+    top: 45vh;
+    left: 30vw;
+}
+#tablebooking-para{
+    font-family: "gilroy";
+    position: absolute;
+    top: 52vh;
+    left: 30vw;
+}
+#room-booking{
+    font-family: "gilroyebold";
+    color: rgb(8, 15, 71);
+    position: absolute;
+    top: 80vh;
+    left: 12vw;
+}
+#roombooking-para{
+    font-family: "gilroy";
+    position: absolute;
+    top: 86vh;
+    left: 12vw;
+}
+
