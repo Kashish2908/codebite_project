@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#section{
+    background-color: blue;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+    width: 100%;
+}
+#section .multisection{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background-color: aqua;
+}
+.multisection .opening{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    position: absolute;
+    border-radius: 50%;
+    height: 150%;
+    width: 300%;
+    transform: scale(1);
+    background-color: white;
+}
+.multisection .opening img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+}
+.multisection:hover .opening{
+    transform: scale(.19);
+}

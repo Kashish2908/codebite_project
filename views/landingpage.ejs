@@ -14,12 +14,12 @@
             <div id="inside-nav">
                 <img src="/images/imgs/landingpageimages/final-removebg-preview.png" alt="">
                 <div id="menu">
-                    <a href="/services.ejs"></a>
-                    <a href=""></a>
-                    <a href="/popup_section"></a>
-                    <a href="/footer"></a>
+                    <a href="#serve">Services</a>
+                    <a href="">grid</a>
+                    <a href="#pickup">Top picks</a>
+                    <a href="#foot">Contact Us</a>
                 </div>
-                <input type="text"><i class="ri-search-eye-fill"></i></input>
+                <!-- <input type="text"><i class="ri-search-eye-fill"></i></input> -->
             </div>
         </div>
         <div id="page-one">
@@ -68,6 +68,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+
+// document.querySelectorAll(".scrolling").forEach(s => {
+//             s.addEventListener("click",function(e){
+//                 e.preventDefault();
+//                 document.querySelector(this.getAttribute("#herf")).scrollIntoView({
+//                     behavior: "smooth"
+//                 })
+//             })
+//         });
+
+
         var tll = gsap.timeline()
         tll
         .from("#page-one-ke-right-ka-right #image-div",{
@@ -175,9 +186,6 @@
             rotate: "-360deg",
             duration: 2
         })
-
-
-        document.querySelectorAll
     </script>
 </body>
 </html>
