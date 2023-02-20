@@ -56,7 +56,7 @@ html,body{
     position: absolute;
     top: 20%;
     left: 25%;
-    width: 100%;
+    width: 150%;
     height: 200px;
 }
 #texts-div h1{
@@ -64,10 +64,10 @@ html,body{
     font-size: 10vh;
 }
 #texts-div h1:nth-child(2){
-    top: 90%;
+    top: 100%;
 }
 #texts-div h1:nth-child(3){
-    top: 90%;
+    top: 100%;
 }
 #text-div-one{
     overflow: hidden;
