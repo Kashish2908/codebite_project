@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFF5EC;
+}
+#nav-one{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+#inside-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+}
+#inside-nav #menu{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+#inside-nav #menu h3{
+    padding-right: 20px;
+}
+#page-one{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+#page-one #page-one-ka-left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
+#page-one-ka-left #texts-div{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 100%;
+    height: 200px;
+}
+#texts-div h1{
+    position: absolute;
+    font-size: 12vh;
+}
+#texts-div h1:nth-child(2){
+    top: 90%;
+}
+#texts-div h1:nth-child(3){
+    top: 90%;
+}
+#text-div-one{
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+#text-div-two{
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+#location-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    background-color: #FE043C;
+    top: 70%;
+    left: -30px;
+    border-radius: 100px;
+}
+#food-delivery-customer{
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    font-size: 15px;
+    gap: 20px;
+}
+#page-one #page-one-ka-right{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 60%;
+}
+#page-one-ka-right #page-one-ke-right-ka-right{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#page-one-ke-right-ka-right #image-div{
+    background-color: #FE043C;
+    left: 10%;
+    position: absolute;
+    height: 200vh;
+    width: 200vh;
+    border-radius: 50%;
+}
+#image-div img:nth-child(1){
+    height: 80vh;
+    width: 40%;
+    position: absolute;
+    top: 7%;
+    left: -3%;
+}
+#image-div img:nth-child(2){
+    height: 90vh;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    right: -11%;
+    transform: rotate(120deg);
+}
+#image-div img:nth-child(3){
+    height: 90vh;
+    width: 50%;
+    position: absolute;
+    top: 65%;
+    left: 14%;
+    transform: rotate(-120deg);
+}
