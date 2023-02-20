@@ -30,11 +30,13 @@ html,body{
 }
 #inside-nav #menu{
     display: flex;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-right: 100px;
 }
 #inside-nav #menu h3{
-    padding-right: 20px;
+    padding-right: 30px;
+    font-size: 2.5vh;
+    cursor: pointer;
 }
 #page-one{
     display: flex;
@@ -55,7 +57,7 @@ html,body{
 }
 #texts-div h1{
     position: absolute;
-    font-size: 12vh;
+    font-size: 10vh;
 }
 #texts-div h1:nth-child(2){
     top: 90%;
