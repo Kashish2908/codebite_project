@@ -12,7 +12,7 @@ html,body{
     width: 100%;
     background-color: #FFF5EC;
 }
-#nav-one{
+#container #nav-one{
     position: fixed;
     z-index: 999;
     display: flex;
