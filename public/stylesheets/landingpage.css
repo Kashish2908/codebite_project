@@ -7,14 +7,14 @@ html,body{
     height: 100%;
     width: 100%;
 }
-#container{
+/* #container{
     min-height: 100vh;
     width: 100%;
     background-color: #FFF5EC;
-}
+} */
 #nav-one{
-    position: fixed;
-    z-index: 999;
+    position: absolute;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
