@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "monument";
+  src: url("../assets/font/MonumentExtended-FreeForPersonalUse/Monument.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +17,7 @@ body {
 }
 
 #main-container {
-  min-height: 100vh;
+  min-height: 120vh;
   width: 100%;
   position: absolute;
   background-color: rgba(248, 204, 166, 0.495);
@@ -41,7 +46,7 @@ h1 {
 
 #cards-row1 {
   position: absolute;
-  margin-top: 80vh;
+  margin-top: 70vh;
   height: 40vh;
   width: 100%;
   padding: 2vh 1.5vw;
@@ -97,11 +102,14 @@ h1 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   pointer-events: none;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .card h3 {
   position: absolute;
-  top: 35%;
+  top: 27%;
   left: 10%;
   color: white;
   font-weight: 300;
@@ -109,21 +117,23 @@ h1 {
 }
 
 #star-rating {
-  margin-left: 12%;
+  font-family: serif;
+  margin-left: 10%;
   position: absolute;
-  top: 37%;
-  left: 30%;
+  top: 38%;
   display: flex;
   flex-wrap: nowrap;
 }
 
 .card i {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .checked {
   color: orange;
 }
+
+
 
 #line {
   position: absolute;
@@ -162,6 +172,6 @@ h1 {
   opacity: 1;
 }
 
-img:hover {
+.card img:hover {
   scale: 1.5;
 }

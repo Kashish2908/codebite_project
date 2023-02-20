@@ -24,7 +24,9 @@ html,body{
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: rgba(248, 204, 166, 0.861);
+  background-color: rgba(248, 204, 166, 0.495);
+
+    /* background-color: rgba(249, 235, 222, 0.861); */
 }
 #border{
     width: 17px;
@@ -35,7 +37,8 @@ html,body{
     left: 8vw;
 }
 #services-heading{
-    font-family: "gilroyebold";
+    font-family: monument;
+    letter-spacing: 2px;
     position: absolute;
     top: 15vh;
     left: 10vw;
