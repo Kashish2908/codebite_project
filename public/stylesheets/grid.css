@@ -8,10 +8,7 @@ html,body{
     width: 100%;
 }
 #section{
-    
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     height: 100%;
     width: 100%;
 }
@@ -39,16 +36,16 @@ html,body{
     
 }
 .multisection .opening img{
+    opacity: 0;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    /* background-size: contain;
-    background-repeat: no-repeat; */
-    
-    /* background-size: cover; */
 }
 .multisection:hover .opening{
     transform: scale(.19);
+}
+.multisection:hover .opening img{
+    opacity: 1;
 }
 .opener{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;

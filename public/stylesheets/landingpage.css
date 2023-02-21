@@ -65,6 +65,18 @@ html,body{
     width: 150%;
     height: 200px;
 }
+#text-div-one{
+    color: rgb(8, 15, 71); 
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+#text-div-two{
+    color: #FE043C;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
 #texts-div h1{
     position: absolute;
     font-size: 8vh;
@@ -80,17 +92,8 @@ html,body{
 #texts-div h1:nth-child(3){
     top: 100%;
 }
-#text-div-one{
-    color: rgb(8, 15, 71); 
-    overflow: hidden;
-    position: relative;
-    height: 200px;
-}
-#text-div-two{
-    color: #FE043C;
-    overflow: hidden;
-    position: relative;
-    height: 100px;
+#texts-div h1:nth-child(4){
+    top: 100%;
 }
 #location-bar{
     display: flex;
@@ -136,7 +139,6 @@ html,body{
     height: 170vh;
     width: 170vh;
     border-radius: 50%;
-    transform: rotate(240deg);
 }
 #image-div img:nth-child(1){
     height: 45vh;

@@ -10,21 +10,21 @@
 <body>
     <div id="section" class="grid_section">
         <div data-index="1" class="multisection ml">
-            <div class="opening">
-                <!-- <img src="../images/imgs/gridimages/table.png" alt=""> -->
-            </div>
+            <!-- <div class="opening">
+                <img src="../images/imgs/gridimages/table.png" alt="">
+            </div> -->
             <div class="tops"></div>
         </div>
         <div data-index="2" class="multisection ml">
-            <div class="opening">
-                <!-- <img src="../images/imgs/gridimages/order.png" alt=""> -->
-            </div>
+            <!-- <div class="opening">
+                <img src="../images/imgs/gridimages/order.png" alt="">
+            </div> -->
             <div class="tops"></div>
         </div>
         <div data-index="3" class="multisection ml">
-            <div class="opening">
-                <!-- <img src="../images/imgs/gridimages/landing page pic 1.png" alt=""> -->
-            </div>
+            <!-- <div class="opening">
+                <img src="../images/imgs/gridimages/landing page pic 1.png" alt="">
+            </div> -->
             <div class="tops"></div>
         </div>
         <div id="videoslide" class="multisection">
@@ -40,7 +40,18 @@
             </div>
         </div>
     </div>
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        function gsapcode(){
+            gsap.from(".multisection",{
+                scrollTrigger:{
+                trigger:"#section",
+            },
+            width: "0%",
+            duration: 1
+            });
+        }
         function imagechange(){
     let allSlides = document.querySelectorAll(".ml");
     skides = [...allSlides];
@@ -62,7 +73,8 @@
   });
   }
 
-imagechange();
+        gsapcode();
+        imagechange();
     </script>
 </body>
 </html>
