@@ -35,7 +35,7 @@ html,body{
     margin-left: 150px;
     margin-right: 100px;
 }
-#inside-nav #menu a{
+#inside-nav #menu div{
     color: rgb(8, 15, 71);
     text-decoration: none;
     padding-right: 30px;
