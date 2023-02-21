@@ -16,6 +16,10 @@ html,body{
     width: 100%;
 }
 #section .multisection{
+    border-color: rgba(0, 0, 0, 0.58);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -31,7 +35,7 @@ html,body{
     height: 150%;
     width: 300%;
     transform: scale(1);
-  background-color: rgba(248, 204, 166, 0.495);
+    background-color: rgba(248, 204, 166, 0.495);
     
 }
 .multisection .opening img{
