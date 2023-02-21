@@ -13,7 +13,7 @@ html,body{
     background-color: #FFF5EC;
 }
 #container #nav-one{
-    position: fixed;
+    position: absolute;
     z-index: 999;
     display: flex;
     justify-content: center;
