@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "monument";
+  src: url(../assets/font/MonumentExtended-FreeForPersonalUse/Monument.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -146,6 +150,7 @@ body {
   transition: 0.5s;
 }
 
+
 .btn span:after {
   content: "\00bb";
   position: absolute;
@@ -196,7 +201,7 @@ body {
     left: 50vh;
     background-color: rgba(220, 20, 60, 0.632);
     position: absolute;
-    padding: 5vw;
+    /* padding: 5vw; */
 }
 
 #deets-for-table-booking h2{
@@ -205,6 +210,8 @@ body {
     font-weight: 100;
     font-size: 2.8vh;
     white-space: nowrap;
+   margin-top: 6vh ;
+   margin-left: 2vw;
 }
 
 
