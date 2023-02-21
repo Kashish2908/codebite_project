@@ -13,8 +13,8 @@ html,body{
     background-color: #FFF5EC;
 }
 #container #nav-one{
-    /* position: fixed;
-    z-index: 999; */
+    position: fixed;
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
