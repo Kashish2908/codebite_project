@@ -25,6 +25,31 @@ html,body{
     height: 100%;
     width: 40%;
 }
+.multisection .tops{
+    background-color: rgba(248, 204, 166, 0.495);
+    display: flex;
+    justify-content: center;
+    /* height: 100%;
+    width: 100%; */
+}
+.tops .tops-top{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    color: rgb(8, 15, 71);
+    top: 40%;
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 80%;
+}
+.tops h1{
+    font-size: 3.7vh;
+}
+.multisection:hover .tops .tops-top{
+    top: 0%;
+}
 .multisection .opening{
     transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
     position: absolute;
@@ -45,6 +70,22 @@ html,body{
     transform: scale(.19);
 }
 .multisection:hover .opening img{
+    opacity: 1;
+}
+.hiddeninfo{
+    color: white;
+    position: absolute;
+    opacity: 0;
+    bottom: -2vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 0 3vw;
+    line-height: 20px;
+}
+.multisection:hover .hiddeninfo{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    bottom: 5vw;
+    color: rgb(8, 15, 71);
     opacity: 1;
 }
 .opener{
