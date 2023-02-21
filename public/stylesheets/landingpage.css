@@ -55,13 +55,18 @@ html,body{
 #page-one-ka-left #texts-div{
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 10%;
     width: 150%;
     height: 200px;
 }
 #texts-div h1{
     position: absolute;
-    font-size: 10vh;
+    font-size: 8vh;
+}
+#texts-div h2{
+    top: 14vh;
+    position: absolute;
+    font-size: 8vh;
 }
 #texts-div h1:nth-child(2){
     top: 100%;
@@ -72,7 +77,7 @@ html,body{
 #text-div-one{
     overflow: hidden;
     position: relative;
-    height: 100px;
+    height: 200px;
 }
 #text-div-two{
     overflow: hidden;
@@ -99,7 +104,7 @@ html,body{
     display: flex;
     position: absolute;
     top: 85%;
-    left: 25%;
+    left: 15%;
     font-size: 12px;
     gap: 20px;
 }
@@ -117,11 +122,11 @@ html,body{
 }
 #page-one-ke-right-ka-right #image-div{
     background-color: #FE043C;
-    top: 20%;
-    left: 20%;
+    top: 18%;
+    left: 18%;
     position: absolute;
-    height: 150vh;
-    width: 150vh;
+    height: 170vh;
+    width: 170vh;
     border-radius: 50%;
 }
 #image-div img:nth-child(1){
