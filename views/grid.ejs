@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/grid.css">
+</head>
+<body>
+    <div id="section">
+        <div data-index="1" class="multisection ml">
+            <div class="opening">
+                <img src="https://images.unsplash.com/photo-1676214182938-a8bef4ab3dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+            <div class="tops"></div>
+        </div>
+        <div data-index="2" class="multisection ml">
+            <div class="opening">
+                <img src="https://images.unsplash.com/photo-1676214182938-a8bef4ab3dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+            <div class="tops"></div>
+        </div>
+        <div data-index="3" class="multisection ml">
+            <div class="opening">
+                <img src="https://images.unsplash.com/photo-1676214182938-a8bef4ab3dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+            <div class="tops"></div>
+        </div>
+        <div id="videoslide" class="multisection">
+            <!-- <div class="opening"></div> -->
+            <div class="opener" id="opener1">
+                <video autoplay muted loop src="/images/video/625049f25321603541f849ab_Brand_Work_noWindow_540x1080-transcode.mp4"></video>
+            </div>
+            <div class="opener" id="opener2">
+                <video autoplay muted loop src="/images/video/62504a9bfb995aa187002397_Motion_Work_noWindow_540x1080-transcode.mp4"></video>
+            </div>
+            <div class="opener" id="opener3">
+                <video autoplay muted loop src="/images/video/62bd5211d2734d33b4f1f3e8_Product_Work_noWindow_540x1080_v2-transcode.mp4"></video>
+            </div>
+        </div>
+    </div>
+    <script>
+        function imagechange(){
+    let allSlides = document.querySelectorAll(".ml");
+    skides = [...allSlides];
+  
+  var isHovered = null;
+  
+  skides.forEach(function (elem) {
+    elem.addEventListener("mouseover", function (dets) {
+      isHovered = "#opener"+dets.target.dataset.index;
+      document.querySelector(isHovered).style.width = "100%";
+    });
+  
+    elem.addEventListener("mouseleave", function (dets) {
+      isHovered = "#opener" + dets.target.dataset.index;
+      document.querySelector(isHovered).style.width = "0%";
+  
+  
+    });
+  });
+  }
+
+imagechange();
+    </script>
+</body>
+</html>

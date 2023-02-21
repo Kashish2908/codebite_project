@@ -7,14 +7,14 @@ html,body{
     height: 100%;
     width: 100%;
 }
-/* #container{
+ #container{
     min-height: 100vh;
     width: 100%;
     background-color: #FFF5EC;
-} */
-#nav-one{
-    position: absolute;
-    z-index: 99;
+}
+#container #nav-one{
+    /* position: fixed;
+    z-index: 999; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +30,17 @@ html,body{
 }
 #inside-nav #menu{
     display: flex;
-    margin-left: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
     margin-right: 100px;
 }
-#inside-nav #menu h3{
-    padding-right: 20px;
+#inside-nav #menu a{
+    color: rgb(8, 15, 71);
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 2.5vh;
+    cursor: pointer;
 }
 #page-one{
     display: flex;
@@ -50,18 +56,18 @@ html,body{
     position: absolute;
     top: 20%;
     left: 25%;
-    width: 100%;
+    width: 150%;
     height: 200px;
 }
 #texts-div h1{
     position: absolute;
-    font-size: 12vh;
+    font-size: 10vh;
 }
 #texts-div h1:nth-child(2){
-    top: 90%;
+    top: 100%;
 }
 #texts-div h1:nth-child(3){
-    top: 90%;
+    top: 100%;
 }
 #text-div-one{
     overflow: hidden;
@@ -86,12 +92,15 @@ html,body{
     left: -30px;
     border-radius: 100px;
 }
+#location-bar h3{
+    font-size: 2.3vh;
+}
 #food-delivery-customer{
     display: flex;
     position: absolute;
     top: 85%;
     left: 25%;
-    font-size: 15px;
+    font-size: 12px;
     gap: 20px;
 }
 #page-one #page-one-ka-right{
@@ -108,32 +117,33 @@ html,body{
 }
 #page-one-ke-right-ka-right #image-div{
     background-color: #FE043C;
-    left: 10%;
+    top: 20%;
+    left: 20%;
     position: absolute;
-    height: 200vh;
-    width: 200vh;
+    height: 150vh;
+    width: 150vh;
     border-radius: 50%;
 }
 #image-div img:nth-child(1){
-    height: 80vh;
+    height: 60vh;
     width: 40%;
     position: absolute;
     top: 7%;
     left: -3%;
 }
 #image-div img:nth-child(2){
-    height: 90vh;
-    width: 50%;
+    height: 70vh;
+    width: 40%;
     position: absolute;
-    top: 20%;
-    right: -11%;
+    top: 18%;
+    right: -9%;
     transform: rotate(120deg);
 }
 #image-div img:nth-child(3){
-    height: 90vh;
+    height: 80vh;
     width: 50%;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 14%;
     transform: rotate(-120deg);
 }

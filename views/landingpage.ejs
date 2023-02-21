@@ -12,28 +12,28 @@
     <div id="container">
         <div id="nav-one">
             <div id="inside-nav">
-                <h1>logo</h1>
+                <img src="/images/imgs/landingpageimages/final-removebg-preview.png" alt="">
                 <div id="menu">
-                    <h3>Services</h3>
-                    <h3>Top Picks</h3>
-                    <h3>About</h3>
-                    <h3>Contact Us</h3>
+                    <a href="#serve">Services</a>
+                    <a href="">grid</a>
+                    <a href="#pickup">Top picks</a>
+                    <a href="#foot">Contact Us</a>
                 </div>
-                <h2>Search Bar</h2>
+                <!-- <input type="text"><i class="ri-search-eye-fill"></i></input> -->
             </div>
         </div>
         <div id="page-one">
             <div id="page-one-ka-left">
                 <div id="texts-div">
                     <div id="text-div-one">
-                        <h1 class="for-food">Delicious food</h1>
-                        <h1 class="for-delivery">A Moments of</h1>
-                        <h1 class="for-resturant">Where every</h1>
+                        <h1 class="for-food">Find your best</h1>
+                        <!-- <h1 class="for-delivery">A Moments of</h1>
+                        <h1 class="for-resturant">Where every</h1> -->
                     </div>
                     <div id="text-div-two">
-                        <h1 class="for-food">at low cost.</h1>
-                        <h1 class="for-delivery">Delivered on</h1>
-                        <h1 class="for-resturant"> tells a story.</h1>
+                        <h1 class="for-food">Food</h1>
+                        <h1 class="for-delivery">partner</h1>
+                        <h1 class="for-resturant">Restaurant</h1>
                     </div>
                 </div>
                 <div id="location-bar">
@@ -68,6 +68,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+
+// document.querySelectorAll(".scrolling").forEach(s => {
+//             s.addEventListener("click",function(e){
+//                 e.preventDefault();
+//                 document.querySelector(this.getAttribute("#herf")).scrollIntoView({
+//                     behavior: "smooth"
+//                 })
+//             })
+//         });
+
+
         var tll = gsap.timeline()
         tll
         .from("#page-one-ke-right-ka-right #image-div",{
@@ -93,60 +104,60 @@
             rotate: "-120deg",
             duration: 2,
         })
-        .to("#text-div-one .for-food",{
-            ease: Expo.linear,
-            top: "-100%",
-            duration: 1,
-            delay: '-2'
-        })
+        // .to("#text-div-one .for-food",{
+        //     ease: Expo.linear,
+        //     top: "-100%",
+        //     duration: 1,
+        //     delay: '-2'
+        // })
         .to("#text-div-two .for-food",{
             ease: Expo.linear,
             top: "-100%",
             duration: 1,
             delay: '-2'
         })
-        .to("#text-div-one .for-delivery",{
-            ease: Expo.linear,
-            top: "0%",
-            duration: 1,
-            delay: '-2'
-        })
+        // .to("#text-div-one .for-delivery",{
+        //     ease: Expo.linear,
+        //     top: "0%",
+        //     duration: 1,
+        //     delay: '-2'
+        // })
         .to("#text-div-two .for-delivery",{
             ease: Expo.linear,
             top: "0%",
             duration: 1,
             delay: '-2'
         })
-        .to("#text-div-one .for-delivery",{
-            ease: Expo.linear,
-            top: "-100%",
-            duration: 1,
-            delay: '-1'
-        })
+        // .to("#text-div-one .for-delivery",{
+        //     ease: Expo.linear,
+        //     top: "-100%",
+        //     duration: 1,
+        //     delay: '-1'
+        // })
         .to("#text-div-two .for-delivery",{
             ease: Expo.linear,
             top: "-100%",
             duration: 1,
             delay: '-1'
         })
-        .to("#text-div-one .for-resturant",{
-            ease: Expo.linear,
-            top: "0%",
-            duration: 1,
-            delay: '-1'
-        })
+        // .to("#text-div-one .for-resturant",{
+        //     ease: Expo.linear,
+        //     top: "0%",
+        //     duration: 1,
+        //     delay: '-1'
+        // })
         .to("#text-div-two .for-resturant",{
             ease: Expo.linear,
             top: "0%",
             duration: 1,
             delay: '-1'
         })
-        .to("#text-div-one .for-resturant",{
-            ease: Expo.linear,
-            top: "-100%",
-            duration: 1,
-            delay: 1
-        })
+        // .to("#text-div-one .for-resturant",{
+        //     ease: Expo.linear,
+        //     top: "-100%",
+        //     duration: 1,
+        //     delay: 1
+        // })
         .to("#text-div-two .for-resturant",{
             ease: Expo.linear,
             top: "-100%",
@@ -175,7 +186,6 @@
             rotate: "-360deg",
             duration: 2
         })
-
     </script>
 </body>
 </html>
