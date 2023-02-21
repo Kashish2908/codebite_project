@@ -18,12 +18,12 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 90px;
     width: 100%;
 }
 #inside-nav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     display: flex;
@@ -34,8 +34,6 @@ html,body{
 }
 #inside-nav #menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 150px;
     margin-right: 100px;
 }
@@ -45,6 +43,10 @@ html,body{
     padding-right: 30px;
     font-size: 2.5vh;
     cursor: pointer;
+}
+#inside-nav #search-bar{
+    margin: 0 15vh;
+    font-size: 1.5vw;
 }
 #page-one{
     display: flex;
