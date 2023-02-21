@@ -115,6 +115,7 @@ body {
   color: white;
   font-weight: 300;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 #star-rating {
