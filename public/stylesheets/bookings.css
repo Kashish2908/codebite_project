@@ -127,7 +127,6 @@ body {
   line-height: 23px;
   transition: all 235ms ease-in-out;
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -163,6 +162,49 @@ body {
 .btn:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+#table-booking-form{
+    position: relative;
+    display: flex;
+    top: 5vh;
+    height: 60vh;
+    width: 60vw;
+    background-color: rgb(255, 127, 80);
+}
+
+#table-booking-form #close-btn{
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 4vh;
+    width: 3vh;
+    border: none;
+    right: 0;
+    background-color: transparent;
+}
+
+#table-booking-form #image-div{
+    height: 100%;
+    width: 50vh;
+    background-color: goldenrod;
+}
+
+#deets-for-table-booking{
+    height: 100%;
+    width: calc(100% - 50vh);
+    left: 50vh;
+    background-color: rgba(220, 20, 60, 0.632);
+    position: absolute;
+    padding: 5vw;
+}
+
+#deets-for-table-booking h2{
+    text-transform: capitalize;
+    font-family: monument;
+    font-weight: 100;
+    font-size: 2.8vh;
+    white-space: nowrap;
 }
 
 
