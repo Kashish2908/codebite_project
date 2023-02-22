@@ -4,10 +4,10 @@ function roomBooking() {
     document.querySelector(".book-stay").addEventListener("click", function () {
         if (room === 0) {
             document.querySelector("#room-booking-form").style.display = "flex";
+            document.querySelector("#no-service-display").style.display = "none";
             document.querySelector("#table-booking-form").style.display = "none";
             document.querySelector("#food-ordering-form").style.display = "none";
 
-            document.querySelector("#no-service-display").style.display = "none";
             room = 1
         } else {
             document.querySelector("#room-booking-form").style.display = "none";
