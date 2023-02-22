@@ -140,7 +140,6 @@
             ease: Expo.linear,
             top: "-100%",
             duration: 2,
-            // delay: "-2",
           });
 
 
@@ -194,15 +193,15 @@
             duration: 2,
             delay: -2,
           });
-          // .to("#text-div-two .for-foods", {
-          //   ease: Expo.linear,
-          //   top: "-100%",
-          //   duration: 2,
-          //   delay: 2
-          // })
       }
       scrollTop();
       gsapanimation();
+      gsap.to("#text-div-two .for-foods", {
+            ease: Expo.linear,
+            top: "-100%",
+            duration: 2,
+            delay: 7.8,
+          });
     </script>
   </body>
 </html>
