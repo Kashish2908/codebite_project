@@ -13,6 +13,15 @@
 <body>
     <a id="back-home" href="/"><i class="ri-arrow-left-s-line"></i><i class="ri-home-4-line"></i> <span>go back</span>
     </a>
+    <div id="no-service-display">
+        <lord-icon id="dev-icon" src="https://cdn.lordicon.com/gqqykmqo.json" trigger="hover"
+            colors="outline:#121331,primary:#646e78,secondary:#c67d53,tertiary:#000000,quaternary:#f3c3ba"
+            style="width:80px;height:80px">
+        </lord-icon>
+        <small id="no-service">select a service </small>
+        
+    </div>
+
 
     <!-- hotel wala part -->
     <div id="hotel-image">
@@ -46,13 +55,142 @@
     <div id="table-booking-form">
         <button id="close-btn"><i class="ri-close-circle-fill"></i></button>
         <div id="image-div">
-            <img src="" alt="">
+            <img src="../images/imgs/table-reservation/table-booking-removebg-preview.png" alt="">
         </div>
         <div id="deets-for-table-booking">
-            <h2>kindly submit details for reservation</h2>
+            <lord-icon id="person-icon" src="https://cdn.lordicon.com/vtmsmyks.json" trigger="hover"
+                colors="outline:#121331,primary:#794628,secondary:#2516c7,tertiary:#545454,quaternary:#f9c9c0">
+            </lord-icon>
+            <lord-icon id="clock-icon" src="https://cdn.lordicon.com/osvvqecf.json" trigger="hover"
+                colors="outline:#121331,primary:#7166ee,secondary:#ebe6ef,tertiary:#f49cc8">
+            </lord-icon>
+            <form action="">
+                <h2>kindly submit details for reservation</h2>
+                <div id="pick-date">
+                    <h3>Pick a date</h3>
+                    <input class="no-outline" type="date" id="session-date" name="session-date" required>
+                </div>
+                <div id="guests">
+                    <h3>number of perons</h3>
+                    <input class="no-outline" type="text" id="no-of-people" min="1" max="20"
+                        placeholder="Enter number of persons" required />
+                </div>
+
+                <div id="time">
+                    <h3>Time Picker</h3>
+                    <input class="no-outline" type="time" id="timePicker" name="time" placeholder="Please select Time">
+                </div>
+
+                <input type="button" value="make a reservation" id="reservation-btn">
+            </form>
+            <!-- <textarea name="" id="" cols="30" rows="10">any message & special request</textarea> -->
+
         </div>
     </div>
 
+    <!-- room booking form -->
+    <div id="room-booking-form">
+        <button id="close-btn"><i class="ri-close-circle-fill"></i></button>
+        <h2>What type of room would you want?</h2>
+        <div id="cards">
+            <div class="booking-card right">
+                <div>
+                    <lord-icon id="icon" src="https://cdn.lordicon.com/vusrdugn.json" trigger="hover"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                    <h2>Single</h2>
+                </div>
+            </div>
+            <div class="booking-card center">
+                <div>
+                    <lord-icon id="icon" src="https://cdn.lordicon.com/etqbfrgp.json" trigger="hover"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                    <h2>Family</h2>
+                </div>
+
+            </div>
+            <div class="booking-card left">
+                <div>
+                    <lord-icon src="https://cdn.lordicon.com/zlwsgwzg.json" trigger="hover"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                    <h2>Business <br> or custom</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- food ordering form -->
+    <div id="food-ordering-form">
+        <button id="close-btn"><i class="ri-close-circle-fill"></i></button>
+        <h1 class="hover-underline-animation">Menu</h1>
+        <lord-icon id="food-icon" src="https://cdn.lordicon.com/ksfmqvvu.json" trigger="hover"
+            colors="outline:#121331,primary:#b4b4b4,secondary:#c67d53">
+        </lord-icon>
+
+        <div id="menu-cards">
+            <div class="item-card food">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=481&q=80"
+                    alt="">
+                <div class="content">
+                    <div class="header">FOOD</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Good food good mood.</li>
+                            <li>A chicken nugget is what you need.</li>
+                            <li>Never too much fries.</li>
+                        </ul>
+                    </div>
+                    <i class="ri-arrow-right-circle-fill"></i>
+                </div>
+
+
+            </div>
+            <div class="item-card dessert">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80"
+                    alt="">
+                <div class="content">
+                    <div class="header">Desserts</div>
+                    <div class="desc">
+                        <ul>
+                            <li>The Dessert You Deserve.</li>
+                            <li>A Slice Of Happiness.</li>
+                            <li>Sweetness Never Tasted This Good.</li>
+                        </ul>
+                    </div>
+                    <i class="ri-arrow-right-circle-fill"></i>
+                </div>
+
+            </div>
+            <div class="item-card beverages">
+                <img src="https://images.unsplash.com/photo-1610468013233-295da7aa8018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1885&q=80"
+                    alt="">
+                <div class="content">
+                    <div class="header">Beverages</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Drink up!</li>
+                            <li>A drink that is irresistibly refreshing.</li>
+                            <li>Great refreshing taste.</li>
+                        </ul>
+                    </div>
+                    <i class="ri-arrow-right-circle-fill"></i>
+                </div>
+
+            </div>
+            <div id="see-more">
+                <h3>see more</h3>
+                <i id="ri-arrow" class="ri-arrow-right-line"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script src="../javascripts/booking.js"></script>
 </body>
 
 </html>
