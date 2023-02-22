@@ -7,6 +7,8 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
+
 #section{
     overflow: hidden;
     display: flex;
@@ -40,12 +42,23 @@ html,body{
     align-items: center;
     height: 25vh;
     width: 80%;
+    overflow: hidden;
+width: fit-content;
 }
 .tops h1{
     font-size: 3vh;
     white-space: nowrap;
     text-transform: capitalize;
 }
+
+#heading-line{
+    position: absolute;
+    background-color: rgba(231, 13, 49, 0.509);
+    height: .5vh;
+    width: 100%;
+    top: 55%;
+}
+
 .multisection:hover .tops .tops-top{
     top: 0%;
 }
