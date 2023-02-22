@@ -26,8 +26,8 @@ body {
 
 .scroll-coming-animation h1 {
   position: absolute;
-  margin-top: 5%;
-  top: 20%;
+  /* margin-top: 5%; */
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(8, 15, 71);
@@ -218,4 +218,21 @@ body {
 
 .card img:hover {
   scale: 1.5;
+}
+
+
+#myBtn {
+  z-index: 99999999999999999;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  font-size: 3vw;
+  margin-right: 5px;
+}
+
+#myBtn:hover {
+  opacity: .8;
 }

@@ -9,6 +9,11 @@ body {
   width: 100%;
 }
 
+*::-webkit-scrollbar{
+  display: none;
+}
+
+
 h1::after {
   content: "";
   position: absolute;
