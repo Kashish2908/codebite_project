@@ -146,11 +146,15 @@ h1::after {
   font-size: 12px;
   gap: 20px;
 }
-#page-one #page-one-ka-right {
-  display: flex;
-  position: relative;
-  height: 100%;
-  width: 60%;
+#page-one-ke-right-ka-right #image-div{
+    background-color: #FE043C;
+    top: 18%;
+    left: 18%;
+    position: absolute;
+    height: 170vh;
+    width: 170vh;
+    border-radius: 50%;
+    /* transform: rotate(240deg); */
 }
 #page-one-ka-right #page-one-ke-right-ka-right {
   overflow: hidden;
@@ -158,37 +162,11 @@ h1::after {
   height: 100%;
   width: 100%;
 }
-#page-one-ke-right-ka-right #image-div {
-  background-color: #fe043c;
-  top: 18%;
-  left: 18%;
-  position: absolute;
-  height: 170vh;
-  width: 170vh;
-  border-radius: 50%;
-}
-#image-div img:nth-child(1) {
-  height: 45vh;
-  width: 28%;
-  position: absolute;
-  top: 5%;
-  left: 3%;
-}
-#image-div img:nth-child(2) {
-  height: 70vh;
-  width: 40%;
-  position: absolute;
-  top: 18%;
-  right: -9%;
-  transform: rotate(120deg);
-}
-#image-div img:nth-child(3) {
-  background-color: white;
-  border-radius: 50%;
-  height: 45vh;
-  width: 28%;
-  position: absolute;
-  top: 80%;
-  left: 25%;
-  transform: rotate(-120deg);
+#image-div img:nth-child(2){
+    height: 55vh;
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    right: -8%;
+    transform: rotate(120deg);
 }

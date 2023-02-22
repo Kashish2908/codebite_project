@@ -24,7 +24,7 @@ html,body{
     width: 100%;
     height: 100vh;
     position: absolute;
-  background-color: rgba(248, 204, 166, 0.495);
+    background-color: rgba(248, 204, 166, 0.495);
 
     /* background-color: rgba(249, 235, 222, 0.861); */
 }
@@ -36,7 +36,7 @@ html,body{
     top: 13vh;
     left: 8vw;
 }
-#services-heading{
+.services-heading{
     font-family: monument;
     letter-spacing: 2px;
     position: absolute;
@@ -44,17 +44,24 @@ html,body{
     left: 10vw;
     color: rgb(8, 15, 71);
 }
-#services-para{
+.services-heading:nth-child(3){
+    top: 20%;
+}
+.services-para{
     position: absolute;
     top: 15vh;
-    left: 53vw;
+    right: 10vw;
+}
+.services-para p{
+    font-weight: 800;
     font-family: "gilroy";
     color: rgb(8, 15, 71);
-    font-weight: 800;
+
 }
 #tablebooking-service{
+    overflow: hidden;
     width: 15vw;
-    height: 35vh;
+    height: 0vh;
     background-color: rgba(248, 182, 125, 0.785);
     position: absolute;
     top: 40vh;
@@ -68,8 +75,9 @@ html,body{
 }
 
 #hotelbooking-service{
+    overflow: hidden;
     width: 18vw;
-    height: 30vh;
+    height: 0vh;
     position: absolute;
     top: 68vh;
     left: 35vw;
@@ -82,8 +90,9 @@ html,body{
     left: 3vw;
 }
 #fooddelivery-service{
+    overflow: hidden;
     width: 30vw;
-    height: 58vh;
+    height: 0vh;
     position: absolute;
     right: 10vw;
     top: 40vh;
