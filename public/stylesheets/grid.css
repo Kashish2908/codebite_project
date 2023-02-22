@@ -26,7 +26,6 @@ html,body{
     width: 40%;
 }
 .multisection .tops{
-    background-color: rgba(248, 204, 166, 0.495);
     display: flex;
     justify-content: center;
     /* height: 100%;
