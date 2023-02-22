@@ -171,28 +171,27 @@ h1::after {
     height: 170vh;
     width: 170vh;
     border-radius: 50%;
-    transform: rotate(240deg);
 }
 #image-div img:nth-child(1){
-  height: 60vh;
-  width: 40%;
+  height: 50vh;
+  width: 35%;
   position: absolute;
-  top: 7%;
-  right: -3%;
+  top: 0%;
+  right: 60%;
 }
 #image-div img:nth-child(2){
-    height: 70vh;
-    width: 40%;
+    height: 55vh;
+    width: 30%;
     position: absolute;
-    top: 18%;
-    right: -9%;
+    top: 23%;
+    right: -8%;
     transform: rotate(120deg);
 }
 #image-div img:nth-child(3){
-  height: 80vh;
-  width: 50%;
+  height: 55vh;
+  width: 35%;
   position: absolute;
-  top: 60%;
-  right: 14%;
+  top: 75%;
+  right: 45%;
   transform: rotate(-120deg);
 }
