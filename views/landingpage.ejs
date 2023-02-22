@@ -33,9 +33,10 @@
               <h2 class="for-food"> Destination.</h2>
             </div>
             <div id="text-div-two">
-              <h1 class="for-resturant">for food ordering</h1>
-              <h1 class="for-food">for table booking</h1>
+              <h1 class="for-food">for food ordering</h1>
               <h1 class="for-delivery">for room booking</h1>
+              <h1 class="for-resturant">for table booking</h1>
+              <h1 class="for-foods">for food ordering</h1>
             </div>
           </div>
           <div id="location-bar">
@@ -134,6 +135,12 @@
             left: "-100%",
             delay: "-2",
             duration: 2,
+          })
+          .to("#text-div-two .for-food", {
+            ease: Expo.linear,
+            top: "-100%",
+            duration: 2,
+            // delay: "-2",
           });
         var tl = gsap.timeline({
           repeat: -1,
@@ -145,49 +152,55 @@
           rotate: "-120deg",
           duration: 2,
         })
-          .to("#text-div-two .for-food", {
-            ease: Expo.linear,
-            top: "-100%",
-            duration: 1,
-            delay: "-2",
-          })
           .to("#text-div-two .for-delivery", {
             ease: Expo.linear,
             top: "0%",
-            duration: 1,
+            duration: 2,
             delay: "-2",
-          })
-          .to("#text-div-two .for-delivery", {
-            ease: Expo.linear,
-            top: "-100%",
-            duration: 1,
-            delay: "-1",
-          })
-          .to("#text-div-two .for-resturant", {
-            ease: Expo.linear,
-            top: "0%",
-            duration: 1,
-            delay: "-1",
-          })
-          .to("#text-div-two .for-resturant", {
-            ease: Expo.linear,
-            top: "-100%",
-            duration: 1,
-            delay: 1,
           })
           .to("#page-one-ke-right-ka-right #image-div", {
             ease: Expo.linear,
             rotate: "-240deg",
             duration: 2,
           })
+          .to("#text-div-two .for-delivery", {
+            ease: Expo.linear,
+            top: "-100%",
+            duration: 2,
+            delay: "-2",
+          })
+          .to("#text-div-two .for-resturant", {
+            ease: Expo.linear,
+            top: "0%",
+            duration: 2,
+            delay: -2
+          })
           .to("#page-one-ke-right-ka-right #image-div", {
             ease: Expo.linear,
             rotate: "-360deg",
             duration: 2,
+          })
+          .to("#text-div-two .for-resturant", {
+            ease: Expo.linear,
+            top: "-100%",
+            duration: 2,
+            delay: -2,
+          })
+          .to("#text-div-two .for-foods", {
+            ease: Expo.linear,
+            top: "0%",
+            duration: 2,
+            delay: -2,
           });
+          // .to("#text-div-two .for-foods", {
+          //   ease: Expo.linear,
+          //   top: "-100%",
+          //   duration: 2,
+          //   delay: 2
+          // })
       }
       scrollTop();
-      // gsapanimation();
+      gsapanimation();
     </script>
   </body>
 </html>
