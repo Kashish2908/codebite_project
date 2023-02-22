@@ -9,11 +9,11 @@ function roomBooking() {
             document.querySelector("#table-booking-form").style.display = "none";
             document.querySelector("#food-ordering-form").style.display = "none";
 
-            document.querySelector("#no-service").style.display = "none";
+            document.querySelector("#no-service-display").style.display = "none";
             room = 1
         } else {
             document.querySelector("#room-booking-form").style.display = "none";
-            document.querySelector("#no-service").style.display = "block";
+            document.querySelector("#no-service-display").style.display = "flex";
 
             room = 0
         }
@@ -21,7 +21,7 @@ function roomBooking() {
 
     document.querySelector("#room-booking-form > #close-btn").addEventListener("click", function () {
         document.querySelector("#room-booking-form").style.display = "none";
-        document.querySelector("#no-service").style.display = "block";
+        document.querySelector("#no-service-display").style.display = "flex";
 
     })
 }
@@ -35,11 +35,11 @@ function bookTable() {
             document.querySelector("#room-booking-form").style.display = "none";
             document.querySelector("#food-ordering-form").style.display = "none";
 
-            document.querySelector("#no-service").style.display = "none";
+            document.querySelector("#no-service-display").style.display = "none";
             tableForm = 1
         } else {
             document.querySelector("#table-booking-form").style.display = "none";
-            document.querySelector("#no-service").style.display = "block";
+            document.querySelector("#no-service-display").style.display = "flex";
 
             tableForm = 0
         }
@@ -47,7 +47,7 @@ function bookTable() {
 
     document.querySelector("#close-btn").addEventListener("click", function () {
         document.querySelector("#table-booking-form").style.display = "none";
-        document.querySelector("#no-service").style.display = "block";
+        document.querySelector("#no-service-display").style.display = "flex";
 
     })
 }
@@ -63,17 +63,17 @@ function foodOrdering() {
             document.querySelector("#table-booking-form").style.display = "none";
             document.querySelector("#room-booking-form").style.display = "none";
 
-            document.querySelector("#no-service").style.display = "none";
+            document.querySelector("#no-service-display").style.display = "none";
             foodFlag = 1
         } else {
             document.querySelector("#food-ordering-form").style.display = "none";
-            document.querySelector("#no-service").style.display = "block";
+            document.querySelector("#no-service-display").style.display = "flex";
 
             foodFlag = 0
         }
         document.querySelector(" #food-ordering-form > #close-btn").addEventListener("click", function () {
             document.querySelector("#food-ordering-form").style.display = "none";
-            document.querySelector("#no-service").style.display = "block";
+            document.querySelector("#no-service-display").style.display = "flex";
 
         })
 
