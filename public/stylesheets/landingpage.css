@@ -146,6 +146,18 @@ h1::after {
   font-size: 12px;
   gap: 20px;
 }
+#page-one #page-one-ka-right{
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 60%;
+}
+#page-one-ka-right #page-one-ke-right-ka-right {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 #page-one-ke-right-ka-right #image-div{
     background-color: #FE043C;
     top: 18%;
@@ -154,19 +166,28 @@ h1::after {
     height: 170vh;
     width: 170vh;
     border-radius: 50%;
-    /* transform: rotate(240deg); */
+    transform: rotate(240deg);
 }
-#page-one-ka-right #page-one-ke-right-ka-right {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-  width: 100%;
+#image-div img:nth-child(1){
+  height: 60vh;
+  width: 40%;
+  position: absolute;
+  top: 7%;
+  right: -3%;
 }
 #image-div img:nth-child(2){
-    height: 55vh;
-    width: 30%;
+    height: 70vh;
+    width: 40%;
     position: absolute;
-    top: 25%;
-    right: -8%;
+    top: 18%;
+    right: -9%;
     transform: rotate(120deg);
+}
+#image-div img:nth-child(3){
+  height: 80vh;
+  width: 50%;
+  position: absolute;
+  top: 60%;
+  right: 14%;
+  transform: rotate(-120deg);
 }
