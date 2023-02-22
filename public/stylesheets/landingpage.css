@@ -1,167 +1,194 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-#container{
-    min-height: 100vh;
-    width: 100%;
-    background-color: #FFF5EC;
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(8, 15, 71);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
-#container #nav-one{
-    position: absolute;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    width: 100%;
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
-#inside-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    display: flex;
+
+#container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff5ec;
 }
-#inside-nav img{
-    left: 3%;
-    position: absolute;
+#container #nav-one {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
 }
-#inside-nav #menu{
-    display: flex;
-    margin-left: 150px;
-    margin-right: 100px;
+#inside-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  display: flex;
 }
-#inside-nav #menu h1{
-    color: rgb(8, 15, 71);
-    text-decoration: none;
-    padding-right: 30px;
-    font-size: 2.5vh;
-    cursor: pointer;
+#inside-nav img {
+  left: 3%;
+  position: absolute;
 }
-#inside-nav #search-bar{
-    margin: 0 15vh;
-    font-size: 1.5vw;
+#inside-nav #menu {
+  display: flex;
+  margin-left: 150px;
+  margin-right: 100px;
 }
-#page-one{
-    display: flex;
-    height: 100vh;
-    width: 100%;
+#inside-nav #menu h1 {
+  color: rgb(8, 15, 71);
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 2.5vh;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-family: monument;
+  display: inline-block;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
 }
-#page-one #page-one-ka-left{
-    position: relative;
-    height: 100%;
-    width: 40%;
+#inside-nav #search-bar {
+  margin: 0 15vh;
+  font-size: 1.5vw;
 }
-#page-one-ka-left #texts-div{
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 150%;
-    height: 200px;
+#page-one {
+  display: flex;
+  height: 100vh;
+  width: 100%;
 }
-#text-div-one{
-    color: rgb(8, 15, 71); 
-    overflow: hidden;
-    position: relative;
-    height: 200px;
+#page-one #page-one-ka-left {
+  position: relative;
+  height: 100%;
+  width: 40%;
 }
-#text-div-two{
-    color: #FE043C;
-    overflow: hidden;
-    position: relative;
-    height: 100px;
+#page-one-ka-left #texts-div {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 150%;
+  height: 200px;
 }
-#texts-div h1{
-    position: absolute;
-    font-size: 8vh;
+#text-div-one {
+  color: rgb(8, 15, 71);
+  overflow: hidden;
+  position: relative;
+  height: 200px;
 }
-#texts-div h2{
-    top: 14vh;
-    position: absolute;
-    font-size: 8vh;
+#text-div-two {
+  color: #fe043c;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
 }
-#texts-div h1:nth-child(2){
-    top: 100%;
+#texts-div h1 {
+  position: absolute;
+  font-size: 8vh;
 }
-#texts-div h1:nth-child(3){
-    top: 100%;
+#texts-div h2 {
+  top: 14vh;
+  position: absolute;
+  font-size: 8vh;
 }
-#texts-div h1:nth-child(4){
-    top: 100%;
+#texts-div h1:nth-child(2) {
+  top: 100%;
 }
-#location-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: absolute;
-    width: 40%;
-    height: 40px;
-    background-color: #FE043C;
-    top: 70%;
-    left: -30px;
-    border-radius: 100px;
+#texts-div h1:nth-child(3) {
+  top: 100%;
 }
-#location-bar h3{
-    font-size: 2.3vh;
+#texts-div h1:nth-child(4) {
+  top: 100%;
 }
-#food-delivery-customer{
-    display: flex;
-    position: absolute;
-    top: 85%;
-    left: 15%;
-    font-size: 12px;
-    gap: 20px;
+#location-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  width: 40%;
+  height: 40px;
+  background-color: #fe043c;
+  top: 70%;
+  left: -30px;
+  border-radius: 100px;
 }
-#page-one #page-one-ka-right{
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 60%;
+#location-bar h3 {
+  font-size: 2.3vh;
 }
-#page-one-ka-right #page-one-ke-right-ka-right{
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-    width: 100%;
+#food-delivery-customer {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  font-size: 12px;
+  gap: 20px;
 }
-#page-one-ke-right-ka-right #image-div{
-    background-color: #FE043C;
-    top: 18%;
-    left: 18%;
-    position: absolute;
-    height: 170vh;
-    width: 170vh;
-    border-radius: 50%;
+#page-one #page-one-ka-right {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 60%;
 }
-#image-div img:nth-child(1){
-    height: 45vh;
-    width: 28%;
-    position: absolute;
-    top: 5%;
-    left: 3%;
+#page-one-ka-right #page-one-ke-right-ka-right {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
-#image-div img:nth-child(2){
-    height: 70vh;
-    width: 40%;
-    position: absolute;
-    top: 18%;
-    right: -9%;
-    transform: rotate(120deg);
+#page-one-ke-right-ka-right #image-div {
+  background-color: #fe043c;
+  top: 18%;
+  left: 18%;
+  position: absolute;
+  height: 170vh;
+  width: 170vh;
+  border-radius: 50%;
 }
-#image-div img:nth-child(3){
-    background-color: white;
-    border-radius: 50%;
-    height: 45vh;
-    width: 28%;
-    position: absolute;
-    top: 80%;
-    left: 25%;
-    transform: rotate(-120deg);
+#image-div img:nth-child(1) {
+  height: 45vh;
+  width: 28%;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+#image-div img:nth-child(2) {
+  height: 70vh;
+  width: 40%;
+  position: absolute;
+  top: 18%;
+  right: -9%;
+  transform: rotate(120deg);
+}
+#image-div img:nth-child(3) {
+  background-color: white;
+  border-radius: 50%;
+  height: 45vh;
+  width: 28%;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  transform: rotate(-120deg);
 }

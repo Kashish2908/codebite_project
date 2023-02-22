@@ -1,6 +1,4 @@
 // booking page form handlings
-
-// ek toh glitch aa rha hai sb saath main nhi khulne chaiye per khul ri h 
 function roomBooking() {
     var room = 0
     document.querySelector(".book-stay").addEventListener("click", function () {

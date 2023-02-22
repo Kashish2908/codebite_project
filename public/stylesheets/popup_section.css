@@ -24,9 +24,10 @@ body {
   background-color: rgba(248, 204, 166, 0.495);
 }
 
-#main-container h1 {
+.scroll-coming-animation h1 {
   position: absolute;
-  top: 10%;
+  margin-top: 5%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(8, 15, 71);

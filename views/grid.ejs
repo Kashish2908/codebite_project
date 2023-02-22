@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/grid.css">
 </head>
+
 <body>
     <div id="section" class="grid_section">
         <div data-index="1" class="multisection ml">
@@ -18,7 +20,7 @@
                     <h1>How to order food</h1>
                 </div>
                 <div class="hiddeninfo">
-                    Visit Top picks section or search for your for your favorite restaurants.
+                    Visit top picks section or search for your for your favorite restaurants.
                 </div>
             </div>
         </div>
@@ -32,7 +34,7 @@
                 </div>
             </div>
             <div class="hiddeninfo">
-                Visit Top picks section or search for your for your favorite places.
+                Visit top picks section or search for your for your favorite places.
             </div>
         </div>
         <div data-index="3" class="multisection ml">
@@ -44,57 +46,67 @@
                     <h1>How to book a hotels</h1>
                 </div>
                 <div class="hiddeninfo">
-                    Visit Top picks section or search for your for your favorite hotels.
+                    Visit top picks section or search for your for your favorite hotels.
                 </div>
             </div>
         </div>
         <div id="videoslide" class="multisection">
             <div class="opener" id="opener1">
-                <video autoplay muted loop src="/images/video/625049f25321603541f849ab_Brand_Work_noWindow_540x1080-transcode.mp4"></video>
+                <!-- /images/video/625049f25321603541f849ab_Brand_Work_noWindow_540x1080-transcode.mp4 -->
+                <video autoplay muted loop
+                    src="../public/images/video/food order [MConverter.eu].mp4"></video>
             </div>
             <div class="opener" id="opener2">
-                <video autoplay muted loop src="/images/video/62504a9bfb995aa187002397_Motion_Work_noWindow_540x1080-transcode.mp4"></video>
+                <video autoplay muted loop
+                    src="/images/video/62504a9bfb995aa187002397_Motion_Work_noWindow_540x1080-transcode.mp4"></video>
             </div>
             <div class="opener" id="opener3">
-                <video autoplay muted loop src="/images/video/62bd5211d2734d33b4f1f3e8_Product_Work_noWindow_540x1080_v2-transcode.mp4"></video>
+                <video autoplay muted loop
+                    src="/images/video/62bd5211d2734d33b4f1f3e8_Product_Work_noWindow_540x1080_v2-transcode.mp4"></video>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+        integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
         gsap.registerPlugin(ScrollTrigger);
-        function gsapcode(){
-            gsap.from(".multisection",{
-                scrollTrigger:{
-                trigger:"#section",
-            },
-            width: "0%",
-            duration: 1
+        function gsapcode() {
+            gsap.from(".multisection", {
+                scrollTrigger: {
+                    trigger: "#section",
+                },
+                width: "0%",
+                duration: 1
             });
         }
-        function imagechange(){
-    let allSlides = document.querySelectorAll(".ml");
-    skides = [...allSlides];
-  
-  var isHovered = null;
-  
-  skides.forEach(function (elem) {
-    elem.addEventListener("mouseover", function (dets) {
-      isHovered = "#opener"+dets.target.dataset.index;
-      document.querySelector(isHovered).style.width = "100%";
-    });
-  
-    elem.addEventListener("mouseleave", function (dets) {
-      isHovered = "#opener" + dets.target.dataset.index;
-      document.querySelector(isHovered).style.width = "0%";
-  
-  
-    });
-  });
-  }
+        function imagechange() {
+            let allSlides = document.querySelectorAll(".ml");
+            skides = [...allSlides];
+
+            var isHovered = null;
+
+            skides.forEach(function (elem) {
+                elem.addEventListener("mouseover", function (dets) {
+                    isHovered = "#opener" + dets.target.dataset.index;
+                    document.querySelector(isHovered).style.width = "100%";
+                });
+
+                elem.addEventListener("mouseleave", function (dets) {
+                    isHovered = "#opener" + dets.target.dataset.index;
+                    document.querySelector(isHovered).style.width = "0%";
+
+
+                });
+            });
+        }
 
         gsapcode();
         imagechange();
     </script>
 </body>
+
 </html>
