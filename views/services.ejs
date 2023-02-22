@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="../stylesheets/services.css">
 </head>
 <body>
-    <div id="main" class="serve">
+    <div id="main">
         <div id="ourservices">
             <div id="border"></div>
-            <h2 id="services-heading">OUR <br>SERVICES</h2>
-            <p id="services-para">From Table booking at your favourite restaurants to
-                delivering food from <br>your selected places to 
-                booking your dream stays at your preffered hotels.<br>
-                Everything at one place for the first time.
-                 
-                  </p>
+            <h2 class="services-heading">OUR</h2>
+            <h2 class="services-heading">SERVICES</h2>
+            <div class="services-para">
+                <p>From Table booking at your favourite restaurants to
+                delivering food from</p>
+                <p>your selected places to 
+                    booking your dream stays at your preffered hotels.</p>
+                <p>Everything at one place for the first time.</p>
+            </div>
             <div id="tablebooking-service">
                 <img src="../images/imgs/services-images/booking.png" alt="">
             </div>
@@ -43,5 +45,100 @@
 
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+            gsap.from(".services-heading",{
+                scrollTrigger:{
+                trigger:"#ourservices",
+            },
+            left: "0%",
+            opacity: 0,
+            duration: 1
+            });
+            gsap.from(".services-para",{
+                scrollTrigger:{
+                trigger:"#ourservices",
+            },
+            top: "0vh",
+            opacity: 0,
+            duration: 1
+            });
+            gsap.from("#table-booking",{
+                scrollTrigger:{
+                trigger:"#tablebooking-service",
+            },
+            top:"60%",
+            opacity: 0,
+            duration: 1
+            });
+            gsap.from("#tablebooking-para",{
+                scrollTrigger:{
+                trigger:"#tablebooking-service",
+            },
+            top:"65%",
+            opacity: 0,
+            duration: 1
+            });
+            gsap.from("#room-booking",{
+                scrollTrigger:{
+                trigger:"#tablebooking-para",
+            },
+            top:"100%",
+            opacity: 0,
+            duration: 1
+            });
+            gsap.from("#roombooking-para",{
+                scrollTrigger:{
+                trigger:"#tablebooking-para",
+            },
+            top:"100%",
+            opacity: 0,
+            duration: 1
+            });
+            gsap.to("#tablebooking-service",{
+                scrollTrigger:{
+                trigger:".services-para",
+            },
+            height:"35vh",
+            duration: 1
+            });
+            gsap.from("#tablebooking-service img",{
+                scrollTrigger:{
+                trigger:".services-para",
+            },
+            top: "7vw",
+            duration: 1
+            });
+            gsap.to("#hotelbooking-service",{
+                scrollTrigger:{
+                trigger:".services-para",
+            },
+            height:"30vh",
+            duration: 1
+            });
+            gsap.from("#hotelbooking-service img",{
+                scrollTrigger:{
+                trigger:".services-para",
+            },
+            top: "7vw",
+            duration: 1
+            });
+            gsap.to("#fooddelivery-service",{
+                scrollTrigger:{
+                trigger:".services-para",
+            },
+            height:"58vh",
+            duration: 1.2
+            });
+            gsap.from("#fooddelivery-service img",{
+                scrollTrigger:{
+                trigger:".services-para",
+            },
+            top: "48vw",
+            duration: 1.5
+            });
+    </script>
 </body>
 </html>
