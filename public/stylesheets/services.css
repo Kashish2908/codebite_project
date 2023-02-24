@@ -11,13 +11,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,body{
     width: 100%;
     height: 100%;
 }
+
+h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(8, 15, 71);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 #main{
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
+    background-color:#F9C99F;
 }
 
 #ourservices{
@@ -126,6 +147,7 @@ html,body{
     position: absolute;
     top: 45vh;
     left: 30vw;
+    text-transform: capitalize;
 }
 #tablebooking-para{
     font-family: "gilroy";
@@ -141,6 +163,7 @@ html,body{
     position: absolute;
     top: 80vh;
     left: 12vw;
+    text-transform: capitalize;
 }
 #roombooking-para{
     font-family: "gilroy";

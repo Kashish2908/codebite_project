@@ -1,143 +1,135 @@
 @font-face {
-    font-family: "monument";
-    src: url("../assets/font/MonumentExtended-FreeForPersonalUse/Monument.otf");
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monument;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-  }
- 
-  
-  #footer {
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-    top: 420vh;
-    background-color: rgba(249, 171, 102, 0.495);
-    overflow: hidden;
-    
-  }
-#footer-heading{
-    font-weight: 100;
-    font-size: 25px;
-    position: absolute;
-    top: 6vh;
-    left: 35%;
-    color: rgb(8, 15, 71);
-
-}
-#footer-logo{
-    width: 15%;
-    height: 15vh;
-    /* background-color: white; */
-    position: absolute;
-    left: 5%;
-    background-image: url("../images/imgs/footerimages/final-removebg-preview.png");
-    background-position: center;
-    /* background-color: rgba(249, 171, 102, 0.495); */
-    
-    font-size: 20px;
-}
-#feedback-section{
-    width: 30%;
-    height: 20vh;
-    /* background-color: aqua; */
-    position: absolute;
-    top: 24vh;
-    left: 3%;
-}
-#feedback-section h3{
-    color: rgb(8, 15, 71);
-    font-weight: 100;
-    font-size: 15px;   
-}
-#feedback-section input{
-    position: absolute;
-    top: 6vh;
-    width: 20vw;
-    height: 8vh;
-    left: 0;
-    border: 2px solid rgba(248, 182, 125, 0.785);
-    z-index: 99999;
-   border-radius: 20px;
-}
-#feedback-section button{
-    width: 6.5vw;
-    height: 8vh;
-    position: absolute;
-    top: 6vh;
-    left: 21vw;
-    font-size: 12px;
-    font-weight: 200;
-    color: white;
-    background-color: rgba(248, 182, 125, 0.785) ;
-    border: 2px solid rgba(248, 182, 125, 0.785);
-    border-radius: 25px;
-    
-}
-#teamdets{
-    width: 20%;
-    height: 20vh;
-    position: absolute;
-    top: 22vh;
-    right: 3%;
-    /* background-color: white; */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#team-name{
-    position: absolute;
-    top: 17vh;
-    right: 4%;
-    color: rgba(8, 15, 71, 0.929);
-    font-size: 15px;
-    font-weight: 200;
-}
-.member{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 4px solid rgba(248, 182, 125, 0.785);
-    overflow: hidden;
-    /* background-color: red; */
-}
-.member img{
-    height: 100%;
-    width: 100%;
-}
-#social-media{
-    width: 10%;
-    height: 15vh;
-    position: absolute;
-    /* background-color: white; */
-    top: 28vh;
-    left: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.icons{
-    font-size: 25px;
-    font-weight: 400;
-    color: rgb(8, 15, 71);
-
-    
+  font-family: "monument";
+  src: url("../assets/font/MonumentExtended-FreeForPersonalUse/Monument.otf");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monument;
+}
 
-  @import url(https://fonts.googleapis.com/css?family=Paprika);
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 
+#footer {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 430vh;
+  background-color: rgba(249, 171, 102, 0.495);
+  overflow: hidden;
+}
+#footer-heading {
+  font-weight: 100;
+  font-size: 25px;
+  position: absolute;
+  top: 6vh;
+  left: 35%;
+  color: rgb(8, 15, 71);
+}
+#footer-logo {
+  width: 15%;
+  height: 15vh;
+  /* background-color: white; */
+  position: absolute;
+  left: 0%;
+  background-image: url("../images/imgs/footerimages/final-removebg-preview.png");
+  background-position: center;
+  /* background-color: rgba(249, 171, 102, 0.495); */
 
+  font-size: 20px;
+}
+#feedback-section {
+  width: 30%;
+  height: 20vh;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 20vh;
+  left: 3%;
+}
+#feedback-section h3 {
+  color: rgb(8, 15, 71);
+  font-weight: 100;
+  font-size: 15px;
+}
+#feedback-section input {
+  position: absolute;
+  top: 6vh;
+  width: 20vw;
+  height: 6vh;
+  left: -1%;
+  border: 2px solid rgba(248, 182, 125, 0.785);
+  z-index: 99999;
+  border-radius: 20px;
+}
+#feedback-section button {
+  width: 6.5vw;
+  height: 6vh;
+  position: absolute;
+  top: 6vh;
+  left: 21vw;
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(8, 15, 71);
+  background-color: rgba(248, 182, 125, 0.785);
+  border: 2px solid rgba(248, 182, 125, 0.785);
+  border-radius: 25px;
+}
+#teamdets {
+  width: 20%;
+  height: 20vh;
+  position: absolute;
+  top: 22vh;
+  right: 3%;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#team-name {
+  position: absolute;
+  top: 20vh;
+  right: 4%;
+  color: rgba(8, 15, 71, 0.929);
+  font-size: 15px;
+  font-weight: 200;
+}
+.member {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid rgba(248, 182, 125, 0.785);
+  overflow: hidden;
+  /* background-color: red; */
+}
+.member img {
+  height: 100%;
+  width: 100%;
+}
+#social-media {
+  width: 10%;
+  height: 15vh;
+  position: absolute;
+  /* background-color: white; */
+  top: 32vh;
+  left: 7%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 20px;
+}
+.icons {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(8, 15, 71);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Paprika);
 
 #background-waves {
   width: 100%;
@@ -146,25 +138,18 @@
   position: absolute;
   bottom: 0;
   color: rgb(231, 13, 49);
-
 }
 
-
 use {
-  animation:move-background-waves 12s linear infinite;
+  animation: move-background-waves 12s linear infinite;
   fill: rgb(231, 13, 49);
 }
 
-
 @keyframes move-background-waves {
-   0% {
-     transform: translate(-2px , 0)
-   }
- 100% {
-   transform: translate( 0px , 0)
-  } 
+  0% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
 }
-
-  
-
-  

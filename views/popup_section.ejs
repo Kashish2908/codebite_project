@@ -266,6 +266,13 @@
         // }
 
         // gsapScenario();
+        window.addEventListener("mousemove", function (dets) {
+            document.querySelector("#cursor").style.top = `${dets.clientY}px`
+            document.querySelector("#cursor").style.left = `${dets.clientX}px`
+
+        })
+
+
 
         let mybutton = document.getElementById("myBtn");
         window.onscroll = function () { scrollFunction() };
